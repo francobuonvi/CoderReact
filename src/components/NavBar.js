@@ -1,4 +1,6 @@
 
+import CartWidget from './CartWidget'
+
 function NavBar(){
     return(
             <nav className='nav_barra'>
@@ -13,6 +15,7 @@ function NavBar(){
                             <li/><a className='menu2' href='#Clases'>Clases</a>
                         </ul>
                     </div>
+                    <CartWidget/>
                 </div>
             </nav>
 
