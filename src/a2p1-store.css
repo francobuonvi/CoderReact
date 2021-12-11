@@ -11,7 +11,7 @@
     --white1: rgb(199, 198, 198);
 }
 
-.container{
+body{
     background: var(--black1);
     width:100%;
     max-width: 1920px;
@@ -323,5 +323,36 @@ p {
     position: relative;
     overflow: hidden;
     margin: 3px;
+
+}
+
+.counter_card{
+    margin: auto;
+    max-width: 300px;
+
+}
+
+.counter{
+    width:90%;
+    max-width: 250px;
+    margin: auto;
+    display: inline-flex;
+
+}
+
+.counter_button{
+
+    background: linear-gradient(180deg, var(--gold1) 0%, var(--gold2) 100%) ;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 3px 3px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    width:90%;
+    max-width: 250px;
+    margin: auto;
 
 }
