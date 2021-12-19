@@ -1,4 +1,4 @@
-/*import {useState} from 'react'
+import {useState} from 'react'
 
 
 function ItemCount({stock, initial, onAdd}){
@@ -23,8 +23,6 @@ function ItemCount({stock, initial, onAdd}){
     }
 
     return (
-        <div className='store_container'>
-            <h3 className='store_title'>Producto 1</h3>
             <div className='counter_card'>
                 <div className='counter'>
                     <button onClick={restar}>-</button>
@@ -34,11 +32,9 @@ function ItemCount({stock, initial, onAdd}){
                 <button className='counter_button' onClick={() => onAdd(contador)}>Agregar al carrito</button>
             </div>
             
-        </div>
+       
     
     );
 }
 
 export default ItemCount
-
-*/

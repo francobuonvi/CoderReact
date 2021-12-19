@@ -6,11 +6,7 @@ import React from 'react'
 function Item({product, price, description, }){
     
 
-    /*const onAdd = (contador)=>{
-    
-     console.log(`${contador} unidades agregadas`);
-        
-    }*/
+    /**/
 
     return(
         <div className='store_container'>    

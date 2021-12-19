@@ -2,7 +2,6 @@
 import React from 'react';
 import {useEffect, useState} from 'react';
 import ItemList from "./ItemList";
-//aqui promesa
 
 function ItemListContainer(){
 

@@ -105,6 +105,13 @@ body{
              height: auto;
     
         }
+
+    .img_detail{
+        position:relative;
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+    }
     
         
     .img_portada{
@@ -268,6 +275,20 @@ p {
     margin: 25px auto;
 }
 
+.detail_container{
+    width: 92%;
+    max-width: 700px;
+    height: 55vh;
+    min-height: 200px;
+    padding: 6px 10px; /* margenes de cartas*/
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--gray) 0%, var(--black2) 100%) ;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 6px var(--color_shadow) ;
+    margin: 25px auto;
+}
+
 .store_img{
     width: 250px;
     height: 98%;
@@ -326,7 +347,7 @@ p {
 }
 
 .counter_card{
-    margin: auto;
+    margin: 50px auto;
     max-width: 300px;
 
 }
