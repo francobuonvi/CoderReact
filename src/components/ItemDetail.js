@@ -10,10 +10,12 @@ const ItemDetail = ({producto}) => {
 
         <div className='detail_container'>           
             <h2>Detalle de producto</h2>
-            <img src={producto.picture} alt='clase' className='img_detail'/>
             <h3 className='cards_h3'>{producto.product}</h3>
-            <p>$ {producto.price}</p>
-            <p className='light_text'>{producto.description}</p>
+            <div className="store_container2">
+                <img src={producto.image} alt='imagen de producto' className='img_detail'/>
+                <p className="price_detail" >$ {producto.price}</p>
+                <p className='light_text description_detail'>{producto.description}</p>
+            </div>
 
             <ItemCount stock={producto.stock} initial={1} onAdd={onAdd}/>
         </div>

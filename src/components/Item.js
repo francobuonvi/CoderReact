@@ -1,9 +1,10 @@
 
 import React from 'react'
-/*import ItemCount from './ItemCount'*/
+import {Link, NavLink} from "react-router-dom"
+
 //muestra la info de producto iterado en Itemlist
 
-function Item({product, price, description, }){
+function Item({product, price, description, id, image }){
     
 
     /**/
@@ -11,10 +12,13 @@ function Item({product, price, description, }){
     return(
         <div className='store_container'>    
             <h3 className='cards_h3'>{product}</h3>
-            <p>$ {price}</p>
-            <p className='light_text'>{description}</p>
-            
-         {/*<ItemCount stock={props.stock} initial={1} onAdd={onAdd}/>*/}
+            <div className='store_container2'>
+                <img src={image} alt='imagen de producto' className='img_detail'/>
+                <p className='price_detail'>$ {price}</p>
+                <p className='light_text description_detail'>{description}</p>
+            </div>
+            <NavLink className='detail_btn' to={`/item/${id}`} >Ver detalle</NavLink>
+         
 
         </div>
         

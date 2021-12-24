@@ -108,10 +108,28 @@ body{
 
     .img_detail{
         position:relative;
-        display: flex;
+        display: inline-block;
         margin: auto;
         border-radius: 5px;
+        max-width: 200px;
+        max-height: 100px;
     }
+
+    .price_detail{
+        display: inline-flex;
+        position:relative;
+        width: 100px;
+
+    }
+
+    .description_detail{
+        display: inline-flex;
+        position:relative;
+        max-width: 420px;
+        text-align: center;
+
+    }
+
     
         
     .img_portada{
@@ -265,21 +283,25 @@ p {
     width: 92%;
     max-width: 700px;
     height: 25vh;
-    min-height: 160px;
+    min-height: 260px;
     padding: 6px 10px; /* margenes de cartas*/
     overflow: hidden;
     background: linear-gradient(180deg, var(--gray) 0%, var(--black2) 100%) ;
     border-radius: 10px;
     position: relative;
     box-shadow: 0 0 6px var(--color_shadow) ;
-    margin: 25px auto;
+    margin: 30px auto;
+}
+
+.store_container2{
+    display: inline-flex;
 }
 
 .detail_container{
     width: 92%;
     max-width: 700px;
     height: 55vh;
-    min-height: 200px;
+    min-height: 350px;
     padding: 6px 10px; /* margenes de cartas*/
     overflow: hidden;
     background: linear-gradient(180deg, var(--gray) 0%, var(--black2) 100%) ;
@@ -287,6 +309,7 @@ p {
     position: relative;
     box-shadow: 0 0 6px var(--color_shadow) ;
     margin: 25px auto;
+    
 }
 
 .store_img{
@@ -374,5 +397,23 @@ p {
     width:90%;
     max-width: 250px;
     margin: auto;
+
+}
+
+.detail_btn{
+
+    background: linear-gradient(180deg, var(--gold1) 0%, var(--gold2) 100%) ;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--black1);
+    font-weight: 700;
+    padding: 5px 5px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    width:95px;
+    display: flex;
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 
 }

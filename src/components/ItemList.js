@@ -8,7 +8,7 @@ function ItemList({list}){
     
     return(
         <div>
-            {list.map((item) => <Item key={item.id} product={item.product} price={item.price} description={item.description} />)}
+            {list.map((item) => <Item key={item.id} product={item.product} price={item.price} description={item.description} id={item.id} image={item.image}/>)}
         </div>
     )
 
