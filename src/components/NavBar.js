@@ -1,5 +1,5 @@
 import CartWidget from './CartWidget'
-import {Link, NavLink} from "react-router-dom"
+import { NavLink} from "react-router-dom"
 
 
 function NavBar(){
@@ -13,8 +13,6 @@ function NavBar(){
                     </div>
                     <div className="links_menu">
                         <ul id='menu' className='no-style horizontal'>
-                            <li/><NavLink className='menu2' to='index.html' >Inicio</NavLink>
-                            <li/><NavLink className='menu2' to='/store' >Productos</NavLink>
                             <li/><NavLink className='menu2' to='/category/books' >Manual</NavLink>
                             <li/><NavLink className='menu2' to='/category/lessons' >Clases</NavLink>
                         </ul>

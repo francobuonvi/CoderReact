@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {Link, NavLink} from "react-router-dom"
+import { NavLink} from "react-router-dom"
 
 //muestra la info de producto iterado en Itemlist
 
@@ -18,11 +18,8 @@ function Item({product, price, description, id, image }){
                 <p className='light_text description_detail'>{description}</p>
             </div>
             <NavLink className='detail_btn' to={`/item/${id}`} >Ver detalle</NavLink>
-         
 
         </div>
-        
-
     )
 
 }
