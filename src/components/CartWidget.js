@@ -1,6 +1,17 @@
 
+import {useContexto} from './context.js'
+
+
+
 function CartWidget(){
-    return <span className="material-icons">shopping_cart</span>;
+
+    const { qty_cart } = useContexto()
+
+    return (
+    <>
+        <span className="material-icons">shopping_cart</span>
+        <p>{qty_cart}</p>
+    </>);
 
 }
 

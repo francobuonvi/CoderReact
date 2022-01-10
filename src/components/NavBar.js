@@ -1,8 +1,11 @@
 import CartWidget from './CartWidget'
 import { NavLink} from "react-router-dom"
+import {useContexto} from './context.js'
 
 
 function NavBar(){
+    const { qty_cart } = useContexto()
+
     return(
             <nav className='nav_barra'>
                 <div className="container nav_container">
@@ -17,9 +20,14 @@ function NavBar(){
                             <li/><NavLink className='menu2' to='/category/lessons' >Clases</NavLink>
                         </ul>
                     </div>
-                        <NavLink to="/cart">
+                        
+                        {qty_cart > 0 ? (
+                            <NavLink to="/cart">
                             <CartWidget/>
-                        </NavLink>
+                            </NavLink>) : 
+                            <></>
+                            }
+                        
                 </div>
             </nav>
 

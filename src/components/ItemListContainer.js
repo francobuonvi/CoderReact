@@ -10,19 +10,19 @@ function ItemListContainer(){
     let [list, setList] = useState ([])
 
     const {productCategory} = useParams()
-    console.log(productCategory)
+    //console.log(productCategory)
 
     useEffect(() =>{
 
         const promesa = new Promise ((res,rej)=>{
             setTimeout(()=>{
                 res(products)
-            },2000)
+            },1000)
         })
 
         promesa.then((productos)=>{
-            console.log('OK itemlistcontainer');
-            console.log(productos);
+            //console.log('OK itemlistcontainer');
+            //console.log(productos);
 
             if(productCategory){
                 setList(productos.filter(producto=> producto.productCategory === productCategory))
