@@ -417,3 +417,17 @@ p {
     font-family: 'Montserrat', sans-serif;
 
 }
+
+.cart_icon{
+    display: flex;
+    margin: 6px;
+    
+}
+
+.qty_cart{
+    background-color: red;
+    padding: 1px 5px 1px 5px;
+    border-radius: 50%;
+    font-size: 85%;
+    
+}
