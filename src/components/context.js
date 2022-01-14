@@ -38,6 +38,7 @@ export const CustomProvider = ({children})=> {
                 element.quantity += contador;
               }
             });
+            setCart(newQty)
 
         } else {
             
