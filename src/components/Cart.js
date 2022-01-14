@@ -1,6 +1,10 @@
 import {useContexto} from './context.js'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
+import ItemList from './ItemList.js'
+import { getDefaultNormalizer } from '@testing-library/react'
+import {db} from '../firebase'
 
 
 
@@ -9,6 +13,25 @@ const Cart = () => {
     const {cart, qty_cart, removeFromCart, cleanCart, totalPrice} = useContexto()
     console.log('cart', cart)
     console.log('qty_cart ' + qty_cart)
+
+    const finalizarCompra = () => {
+        const ventasCollection = collection(db, 'ventas')
+        addDoc(ventasCollection,{
+            buyer : {
+                name: 'Franco',
+                lastName: 'Buonvicino',
+                email: 'info@gmail.com',
+                order: '10'
+            },
+            items: cart,
+            date: serverTimestamp(),
+            total: 100
+        })
+        .then((resultado)=>{
+            console.log(resultado)
+        })
+        cleanCart()
+    }
 
 
     return (
@@ -29,6 +52,7 @@ const Cart = () => {
                         <h3>Total: $ {totalPrice}</h3>
 
                         <button onClick={() => {cleanCart()}}>Vaciar carrito</button>
+                        <button onClick={() => {finalizarCompra()}}>Finalizar compra</button>
                 
                     </div>
                 
