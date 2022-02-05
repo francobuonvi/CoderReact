@@ -1,6 +1,6 @@
 import ItemCount from './ItemCount'
 import { NavLink} from "react-router-dom"
-import {useEffect, useState} from 'react';
+import { useState} from 'react';
 import { useContexto } from './context';
 
 const ItemDetail = ({producto}) => {
@@ -25,10 +25,6 @@ const ItemDetail = ({producto}) => {
         } 
         
     }
-
-    //    useEffect(() =>{
-    //     console.log("useEffect")
-    //     },[mostrar])
  
        
         return (
@@ -52,7 +48,7 @@ const ItemDetail = ({producto}) => {
                 }
             </div>
         )
-         /* */   
+         
     }
 
 export default ItemDetail

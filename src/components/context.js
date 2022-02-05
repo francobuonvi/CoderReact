@@ -30,6 +30,7 @@ export const CustomProvider = ({children})=> {
 
         if (isInCart(producto.id)) {
             console.log('pasa x true: producto ya en cart')
+            console.log(producto.id)
             //copia de cart para mapear y agregar cantidad al producto si ya se encuentra en el carrito.
 
             const newQty = [...cart];

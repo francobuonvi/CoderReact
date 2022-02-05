@@ -293,6 +293,24 @@ p {
     margin: 30px auto;
 }
 
+
+.cart_container{
+    width: 92%;
+    max-width: 700px;
+    min-height: 300px;
+    padding: 6px 10px; /* margenes de cartas*/
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--gray) 0%, var(--black2) 100%) ;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 6px var(--color_shadow) ;
+    margin: 30px auto;
+}
+
+.p_cart{
+    color: red;
+}
+
 .store_container2{
     display: inline-flex;
 }
@@ -431,3 +449,5 @@ p {
     font-size: 85%;
     
 }
+
+td { padding: 5px 5px }
