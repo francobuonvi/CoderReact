@@ -1,10 +1,6 @@
 import {useContexto} from './context.js'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
-import ItemList from './ItemList.js'
-import { getDefaultNormalizer } from '@testing-library/react'
-import {db} from '../firebase'
 import Checkout from './Checkout';
 
 
